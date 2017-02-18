@@ -15,9 +15,9 @@ RUN apt-get update \
 		zlib1g-dev \
 	&& rm -rf /var/lib/apt/lists/*
 
-ENV RUBY_MAJOR 2.3
-ENV RUBY_VERSION 2.3.3
-ENV RUBY_DOWNLOAD_SHA256 241408c8c555b258846368830a06146e4849a1d58dcaf6b14a3b6a73058115b7
+ENV RUBY_MAJOR 2.4
+ENV RUBY_VERSION 2.4.0
+ENV RUBY_DOWNLOAD_SHA256 152fd0bd15a90b4a18213448f485d4b53e9f7662e1508190aa5b702446b29e3d
 
 # some of ruby's build scripts are written in ruby
 # we purge this later to make sure our final image uses what we just built

@@ -1,6 +1,6 @@
 # rpi-ruby
 
-RaspberryPi compatible Docker image with Ruby.
+RaspberryPi compatible Docker image with Ruby. [Available on Docker Hub](https://hub.docker.com/r/lockitron/rpi-ruby/).
 
 Adapted from the [Hypriot Ruby Docker image](https://hub.docker.com/r/hypriot/rpi-ruby/) to support basic version tagging akin to the [mainline Ruby image](https://hub.docker.com/_/ruby/).
 
