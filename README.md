@@ -6,6 +6,7 @@ Adapted from the [Hypriot Ruby Docker image](https://hub.docker.com/r/hypriot/rp
 
 ### Supported Tags
 `2.3.3`, `2.3`
+`2.4.0`, `2.4`
 
 ## License
 
