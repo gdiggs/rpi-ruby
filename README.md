@@ -5,8 +5,8 @@ RaspberryPi compatible Docker image with Ruby. [Available on Docker Hub](https:/
 Adapted from the [Hypriot Ruby Docker image](https://hub.docker.com/r/hypriot/rpi-ruby/) to support basic version tagging akin to the [mainline Ruby image](https://hub.docker.com/_/ruby/).
 
 ### Supported Tags
-`2.3.3`, `2.3`
-`2.4.0`, `2.4`
+* `2.3.3`, `2.3`
+* `2.4.0`, `2.4`
 
 ## License
 
