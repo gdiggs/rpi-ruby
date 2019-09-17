@@ -1,6 +1,5 @@
-# Pull base image
-FROM resin/rpi-raspbian:jessie
-MAINTAINER Cameron Robertson <cameron@lockitron.com>
+FROM balenalib/raspberrypi4-64-debian
+MAINTAINER Gordon Diggs
 
 RUN apt-get update \
 	&& apt-get install -y --no-install-recommends \
@@ -8,16 +7,16 @@ RUN apt-get update \
 		ca-certificates \
 		curl \
 		libffi-dev \
-		libgdbm3 \
+		libgdbm-dev \
 		libssl-dev \
 		libyaml-dev \
 		procps \
 		zlib1g-dev \
 	&& rm -rf /var/lib/apt/lists/*
 
-ENV RUBY_MAJOR 2.4
-ENV RUBY_VERSION 2.4.0
-ENV RUBY_DOWNLOAD_SHA256 152fd0bd15a90b4a18213448f485d4b53e9f7662e1508190aa5b702446b29e3d
+ENV RUBY_MAJOR 2.6
+ENV RUBY_VERSION 2.6.4
+ENV RUBY_DOWNLOAD_SHA256 4fc1d8ba75505b3797020a6ffc85a8bcff6adc4dabae343b6572bf281ee17937
 
 # some of ruby's build scripts are written in ruby
 # we purge this later to make sure our final image uses what we just built
@@ -26,7 +25,6 @@ RUN buildDeps=' \
 		bison \
 		gcc \
 		libbz2-dev \
-		libgdbm-dev \
 		libglib2.0-dev \
 		libncurses-dev \
 		libreadline-dev \
